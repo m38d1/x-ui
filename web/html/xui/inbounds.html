@@ -239,9 +239,6 @@
                                                 {{ i18n "info"}}
                                             </a-menu-item>
                                         </template>
-                                        <a-menu-item key="resetTraffic">
-                                            <a-icon type="retweet"></a-icon> {{ i18n "pages.inbounds.resetTraffic" }}
-                                        </a-menu-item>
                                         <a-menu-item key="clipboard">
                                             <a-icon type="copy"></a-icon>
                                             {{ i18n "pages.inbounds.exportInbound" }}
@@ -835,9 +832,7 @@
                     case "clipboard":
                         this.copyToClipboard(dbInbound.id);
                         break;
-                    case "resetTraffic":
-                        this.resetTraffic(dbInbound.id);
-                        break;
+                  
                     case "resetClients":
                         this.resetAllClientTraffics(dbInbound.id);
                         break;
